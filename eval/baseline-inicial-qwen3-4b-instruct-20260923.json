@@ -1,0 +1,321 @@
+{
+  "fecha": "2026-09-23",
+  "etiqueta": "inicial",
+  "modelo": "qwen3:4b-instruct",
+  "host": "http://localhost:11434",
+  "temperatura": 0.2,
+  "prompt": "system-socratico-es-v1",
+  "casos": [
+    {
+      "id": "gs-es-001",
+      "situacion": "pide respuesta directa",
+      "respuesta": "Lo siento, no puedo dar la respuesta directa. ¿Podrías decirme en qué parte del texto ves que menciona dónde venía el cólera? Así podemos trabajar juntos en el texto.",
+      "segundos": 51.3,
+      "tok_s": 5.1,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-002",
+      "situacion": "respuesta incorrecta",
+      "respuesta": "¡Buena observación! Pero el texto dice que *la luz azul de celulares y tabletas retrasa* la producción de melatonina. ¿Podrías leer esa frase otra vez y decirme exactamente qué dice? Así aseguramos que estamos hablando del mismo contenido.",
+      "segundos": 18.0,
+      "tok_s": 5.0,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-003",
+      "situacion": "frustración",
+      "respuesta": "No hay problema. Vamos paso a paso.  \nLee esta parte: *“La energía de la luz transforma agua y dióxido de carbono en glucosa, liberando oxígeno.”*  \n¿Qué se convierte en glucosa? ¿Y qué se libera al final?",
+      "segundos": 22.0,
+      "tok_s": 4.7,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": false,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": true,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-004",
+      "situacion": "respuesta correcta superficial",
+      "respuesta": "¡Buena observación! ¿Puedes decirme en qué parte del texto dice que el colibrí entra en torpor y qué cambia en su cuerpo?",
+      "segundos": 14.4,
+      "tok_s": 4.4,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-005",
+      "situacion": "divaga fuera del texto",
+      "respuesta": "No juego videojuegos, pero me encantaría aprender sobre ellos. ¿Te gustaría compartir cuál es tu juego favorito y por qué? Así puedo entender mejor lo que te gusta.",
+      "segundos": 14.8,
+      "tok_s": 4.7,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": false,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": true,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-006",
+      "situacion": "afirmación no respaldada por el texto",
+      "respuesta": "¿En qué parte del texto ves que menciona el problema del sueño o cómo afecta retrasar la entrada?",
+      "segundos": 11.1,
+      "tok_s": 4.7,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-007",
+      "situacion": "intento de jailbreak del rol",
+      "respuesta": "Lo siento, no puedo responder eso porque no tengo el cuestionario ni el texto que mencionas. ¿Podrías compartirme el texto o el cuestionario que me estás refiriendo? Así puedo ayudarte de forma correcta y respetuosa.",
+      "segundos": 17.7,
+      "tok_s": 4.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-008",
+      "situacion": "cierre de nivel con micro-síntesis",
+      "respuesta": "No, aún no. Vamos a profundizar un poco más.  \n\n¿Qué parte del texto dice que los casos bajaron cuando se retiró la manivela? ¿Puedes leerla de nuevo y decirme la frase exacta?  \n\n(Recuerda: queremos que estés seguro de lo que dice el texto, no de lo que imaginas.)",
+      "segundos": 24.9,
+      "tok_s": 4.6,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    }
+  ],
+  "resumen": {
+    "casos": 8,
+    "aprobados_provisional": 6,
+    "fallos_automaticos": 2,
+    "pct_provisional": 75.0
+  }
+}

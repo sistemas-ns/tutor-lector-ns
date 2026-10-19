@@ -1,0 +1,13 @@
+idioma: es
+nivel: inferencial
+titulo: El sueño y las pantallas
+situacion: respuesta superficial
+---
+TEXTO: La memoria consolida lo aprendido durante el sueño profundo, de modo que dormir
+poco la noche anterior a una evaluación puede anular parte del esfuerzo de estudio.
+ESTUDIANTE: creo que el texto dice que dormir es importante
+TUTOR: Sí, y vamos a afinarlo. Según el texto, ¿qué le pasa a lo que estudiaste si
+duermes poco esa noche? Busca la frase que lo dice.
+ESTUDIANTE: que se puede perder porque la memoria se guarda durmiendo
+TUTOR: Exacto, y lo encontraste en el texto: eso es usar evidencia. Ahora un paso más:
+¿por qué crees que el autor menciona las evaluaciones justo en esa parte?

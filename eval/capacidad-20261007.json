@@ -1,0 +1,77 @@
+{
+  "fecha": "2026-10-07",
+  "host": "http://OLLAMA_HOST:11434",
+  "modelo": "llama3.1:8b",
+  "fase_a_latencia": [
+    {
+      "total_s": 18.99,
+      "prompt_tokens": 145,
+      "prefill_s": 6.22,
+      "gen_tokens": 20,
+      "decode_tok_s": 7.8,
+      "mult": 1
+    },
+    {
+      "total_s": 13.58,
+      "prompt_tokens": 288,
+      "prefill_s": 10.74,
+      "gen_tokens": 21,
+      "decode_tok_s": 8.0,
+      "mult": 4
+    },
+    {
+      "total_s": 23.33,
+      "prompt_tokens": 570,
+      "prefill_s": 20.44,
+      "gen_tokens": 21,
+      "decode_tok_s": 7.9,
+      "mult": 10
+    },
+    {
+      "total_s": 38.54,
+      "prompt_tokens": 1043,
+      "prefill_s": 34.56,
+      "gen_tokens": 28,
+      "decode_tok_s": 7.6,
+      "mult": 20
+    }
+  ],
+  "fase_b_concurrencia": [
+    {
+      "concurrencia": 1,
+      "ok": 1,
+      "errores": 0,
+      "p50_s": 3.3,
+      "max_s": 3.3,
+      "pared_s": 3.33,
+      "throughput_rpm": 18.0
+    },
+    {
+      "concurrencia": 2,
+      "ok": 2,
+      "errores": 0,
+      "p50_s": 7.3,
+      "max_s": 8.9,
+      "pared_s": 8.87,
+      "throughput_rpm": 13.5
+    },
+    {
+      "concurrencia": 4,
+      "ok": 4,
+      "errores": 0,
+      "p50_s": 12.9,
+      "max_s": 17.8,
+      "pared_s": 17.81,
+      "throughput_rpm": 13.5
+    },
+    {
+      "concurrencia": 8,
+      "ok": 8,
+      "errores": 0,
+      "p50_s": 18.2,
+      "max_s": 35.0,
+      "pared_s": 34.97,
+      "throughput_rpm": 13.7
+    }
+  ]
+}

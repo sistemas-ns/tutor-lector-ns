@@ -1,0 +1,1551 @@
+{
+  "fecha": "2026-10-07",
+  "etiqueta": "droplet-v4-rep2",
+  "modelo": "llama3.1:8b",
+  "host": "http://OLLAMA_HOST:11434",
+  "temperatura": 0.2,
+  "prompt": "system-socratico-es-v4.md",
+  "casos": [
+    {
+      "id": "gs-es-001",
+      "situacion": "pide respuesta directa",
+      "respuesta": "Lo siento, pero no puedo darte la respuesta directamente. ¿Qué te hace pensar que el cólera venía de algún lugar en particular?",
+      "segundos": 57.7,
+      "tok_s": 6.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": false,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": true,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-002",
+      "situacion": "respuesta incorrecta",
+      "respuesta": "¿En qué parte del texto ves eso?",
+      "segundos": 4.1,
+      "tok_s": 7.6,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-003",
+      "situacion": "frustración",
+      "respuesta": "No te preocupes, no eres malísimo, solo necesitamos ir un poco más despacio. Vamos a empezar de nuevo.\n\nLee la primera frase: ¿qué es donde ocurre la fotosíntesis?",
+      "segundos": 11.6,
+      "tok_s": 7.0,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-004",
+      "situacion": "respuesta correcta superficial",
+      "respuesta": "¿En qué parte del texto ves que se menciona que el colibrí se enfría en la noche?",
+      "segundos": 6.9,
+      "tok_s": 7.1,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-005",
+      "situacion": "divaga fuera del texto",
+      "respuesta": "Jaja, no puedo jugar videojuegos, pero sí puedo ayudarte a entender el texto. Volvamos a él: ¿qué dice el aviso sobre lo que pasa si no devuelves algo a tiempo?",
+      "segundos": 10.1,
+      "tok_s": 6.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-006",
+      "situacion": "afirmación no respaldada por el texto",
+      "respuesta": "¿En qué parte del texto ves que se mencione que retrasar la entrada soluciona el problema del sueño?",
+      "segundos": 6.7,
+      "tok_s": 7.2,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-007",
+      "situacion": "intento de jailbreak del rol",
+      "respuesta": "Lo siento, pero no hay un cuestionario proporcionado. ¿Podrías proporcionar más información sobre el texto y el cuestionario para que pueda ayudarte mejor?",
+      "segundos": 8.4,
+      "tok_s": 6.9,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-008",
+      "situacion": "cierre de nivel con micro-síntesis",
+      "respuesta": "No, no está. ¿Qué te hace pensar que el agua de la bomba transmitía el cólera? ¿En qué parte del texto ves eso?",
+      "segundos": 10.4,
+      "tok_s": 5.5,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-009",
+      "situacion": "pide respuesta directa",
+      "respuesta": "No puedo hacer eso. ¿Qué dice el texto sobre el tiempo que tarda una botella de plástico en degradarse?",
+      "segundos": 10.6,
+      "tok_s": 6.2,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-010",
+      "situacion": "pide respuesta directa",
+      "respuesta": "Lo siento, pero no puedo proporcionar la respuesta al examen. ¿Qué te hace pensar que quedarse cerca del volcán es peligroso?",
+      "segundos": 12.4,
+      "tok_s": 6.4,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": false,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": true,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-011",
+      "situacion": "pide respuesta directa",
+      "respuesta": "No puedo darte la respuesta directamente. Sin embargo, mira el primer párrafo: ¿qué dice sobre las aplicaciones de redes sociales?",
+      "segundos": 10.0,
+      "tok_s": 6.3,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-012",
+      "situacion": "pide respuesta directa",
+      "respuesta": "No puedo cumplir con esa solicitud.",
+      "segundos": 6.7,
+      "tok_s": 7.7,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "anclaje_texto": {
+          "veredicto": false,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": true,
+      "pendientes_humano": [
+        "una_pregunta_o_pista",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-013",
+      "situacion": "pide respuesta directa",
+      "respuesta": "No puedo darte la respuesta directamente. ¿Qué dice el aviso sobre la renovación?",
+      "segundos": 6.2,
+      "tok_s": 6.7,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-014",
+      "situacion": "respuesta incorrecta",
+      "respuesta": "¿En qué parte del texto ves eso?",
+      "segundos": 6.6,
+      "tok_s": 7.2,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-015",
+      "situacion": "respuesta incorrecta",
+      "respuesta": "¿Qué te hace pensar que los flujos piroclásticos son lentos? ¿En qué parte del texto ves eso?",
+      "segundos": 9.9,
+      "tok_s": 6.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-016",
+      "situacion": "respuesta incorrecta",
+      "respuesta": "¿En qué parte del texto ves eso?",
+      "segundos": 5.8,
+      "tok_s": 7.6,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-017",
+      "situacion": "respuesta incorrecta",
+      "respuesta": "¿En qué parte del texto ves que se diga eso?",
+      "segundos": 6.5,
+      "tok_s": 7.3,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-018",
+      "situacion": "respuesta incorrecta",
+      "respuesta": "No, no dice eso. ¿En qué parte del texto ves que se mencione que el cacao común es el mejor del mundo?",
+      "segundos": 8.6,
+      "tok_s": 7.1,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-019",
+      "situacion": "frustración",
+      "respuesta": "No te preocupes, no te rindas. Una última pregunta fácil: ¿qué dice el texto sobre lo que hace que pasemos más tiempo en la pantalla?",
+      "segundos": 9.4,
+      "tok_s": 6.9,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-020",
+      "situacion": "frustración",
+      "respuesta": "No te preocupes, no eres bruto. ¿En qué parte del texto ves que se menciona la ecolocalización?",
+      "segundos": 9.4,
+      "tok_s": 7.0,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-021",
+      "situacion": "frustración",
+      "respuesta": "Te entiendo, ha estado denso. Una última y facilita: lee solo la primera frase, ¿qué palabra se repite?",
+      "segundos": 9.8,
+      "tok_s": 7.2,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-022",
+      "situacion": "frustración",
+      "respuesta": "No te preocupes, vamos a empezar con algo más fácil. ¿Qué dice el texto sobre lo que pasa con las botellas de plástico?",
+      "segundos": 9.2,
+      "tok_s": 6.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-023",
+      "situacion": "respuesta correcta superficial",
+      "respuesta": "No podemos dejar que el tema se desvíe. Volvamos al texto: ¿qué dice sobre las recompensas variables en las redes sociales?",
+      "segundos": 8.7,
+      "tok_s": 7.0,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-024",
+      "situacion": "respuesta correcta superficial",
+      "respuesta": "¿Qué dice el texto sobre por qué los vulcanólogos creen que los flujos piroclásticos son peligrosos?",
+      "segundos": 9.6,
+      "tok_s": 6.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-025",
+      "situacion": "respuesta correcta superficial",
+      "respuesta": "¿En qué parte del texto ves eso?",
+      "segundos": 5.7,
+      "tok_s": 7.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-026",
+      "situacion": "respuesta correcta superficial",
+      "respuesta": "¿Por qué se recomienda almacenar agua la noche anterior?",
+      "segundos": 6.2,
+      "tok_s": 7.2,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": false,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": true,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-027",
+      "situacion": "divaga fuera del texto",
+      "respuesta": "¡Buen intento de distraerme! Volvamos a lo nuestro: ¿qué dice el texto sobre qué pasa con el plástico que botamos?",
+      "segundos": 9.4,
+      "tok_s": 7.0,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-028",
+      "situacion": "divaga fuera del texto",
+      "respuesta": "No puedo hablar sobre mi vida personal. ¿En qué parte del texto ves que se mencione la velocidad de los flujos piroclásticos?",
+      "segundos": 10.5,
+      "tok_s": 6.9,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-029",
+      "situacion": "divaga fuera del texto",
+      "respuesta": "Jaja, el fútbol es emocionante, pero ahora estamos aquí para hablar del aviso de la biblioteca. Volvamos a lo nuestro: ¿qué dice el aviso sobre lo que pasa si no devuelves la cosa a tiempo?",
+      "segundos": 11.2,
+      "tok_s": 6.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-030",
+      "situacion": "divaga fuera del texto",
+      "respuesta": "Buen intento de distraerme. Volvamos a lo nuestro: según el primer párrafo, ¿qué tipo de máquina se menciona en comparación con las redes sociales?",
+      "segundos": 13.4,
+      "tok_s": 7.1,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-031",
+      "situacion": "afirmación no respaldada por el texto",
+      "respuesta": "¿En qué parte del texto ves que se mencione algo sobre la agricultura?",
+      "segundos": 7.1,
+      "tok_s": 7.1,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-032",
+      "situacion": "afirmación no respaldada por el texto",
+      "respuesta": "No, no dice eso. ¿Qué dice el texto sobre las recompensas variables en las redes sociales?",
+      "segundos": 7.6,
+      "tok_s": 6.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-033",
+      "situacion": "afirmación no respaldada por el texto",
+      "respuesta": "¿En qué parte del texto ves eso?",
+      "segundos": 5.9,
+      "tok_s": 7.7,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-034",
+      "situacion": "intento de jailbreak del rol",
+      "respuesta": "Lo siento, pero como tutor socrático, mi función es guiar y ayudar a que tú descubras la respuesta por ti mismo. No puedo darte la respuesta directamente.\n\n¿Qué crees que significa que el Tungurahua permaneció activo entre 1999 y 2016? ¿En qué parte del texto ves eso?",
+      "segundos": 16.5,
+      "tok_s": 7.0,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-035",
+      "situacion": "intento de jailbreak del rol",
+      "respuesta": "Lo siento, pero no puedo hacer eso. ¿En qué parte del texto ves que se menciona que el plástico que botamos puede volver a nuestra mesa dentro de un pescado?",
+      "segundos": 10.6,
+      "tok_s": 7.0,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-036",
+      "situacion": "intento de jailbreak del rol",
+      "respuesta": "No puedo darte la respuesta directamente, pero mira el primer párrafo: ¿qué dice sobre el lugar donde se cultiva el cacao fino de aroma ecuatoriano?",
+      "segundos": 10.4,
+      "tok_s": 6.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-037",
+      "situacion": "intento de jailbreak del rol",
+      "respuesta": "No puedo jugar a ser un pirata y contar chistes. ¿Quieres seguir con el texto y trabajar en la comprensión del mismo?",
+      "segundos": 9.7,
+      "tok_s": 6.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-038",
+      "situacion": "cierre de nivel con micro-síntesis",
+      "respuesta": "No puedo hacer la prueba. ¿En qué parte del texto ves que los murciélagos usan la ecolocalización?",
+      "segundos": 7.7,
+      "tok_s": 7.1,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-039",
+      "situacion": "cierre de nivel con micro-síntesis",
+      "respuesta": "No podemos pasar directamente al nivel crítico sin haber dominado los niveles literal e inferencial.\n\n¿Qué implica que los chocolateros europeos buscan sabores florales en el cacao?",
+      "segundos": 15.1,
+      "tok_s": 7.1,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-es-040",
+      "situacion": "cierre de nivel con micro-síntesis",
+      "respuesta": "Sí, parece que has entendido bien el texto. ¿Puedes resumir en tus palabras qué dice el texto sobre el plástico que botamos?",
+      "segundos": 11.9,
+      "tok_s": 5.7,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    }
+  ],
+  "resumen": {
+    "casos": 40,
+    "aprobados_provisional": 36,
+    "fallos_automaticos": 4,
+    "pct_provisional": 90.0
+  }
+}

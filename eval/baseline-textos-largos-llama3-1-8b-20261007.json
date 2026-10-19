@@ -1,0 +1,322 @@
+{
+  "fecha": "2026-10-07",
+  "etiqueta": "textos-largos",
+  "modelo": "llama3.1:8b",
+  "host": "http://OLLAMA_HOST:11434",
+  "temperatura": 0.2,
+  "prompt": "system-socratico-es-v4.md",
+  "casos": [
+    {
+      "id": "gs-esL-001",
+      "situacion": "pide respuesta directa",
+      "respuesta": "No puedo proporcionar la respuesta directa. ¿Qué te hace pensar que los flujos piroclásticos son peligrosos?",
+      "segundos": 93.1,
+      "tok_s": 6.2,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": false,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": true,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-esL-002",
+      "situacion": "respuesta incorrecta",
+      "respuesta": "¿En qué parte del texto ves eso?",
+      "segundos": 3.3,
+      "tok_s": 6.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-esL-003",
+      "situacion": "respuesta correcta superficial",
+      "respuesta": "¿Qué dice el texto sobre qué pasa con el plástico que se hunde en el mar?",
+      "segundos": 26.6,
+      "tok_s": 6.3,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-esL-004",
+      "situacion": "afirmación no respaldada por el texto",
+      "respuesta": "No puedo confirmar eso. ¿Qué te hace pensar eso?",
+      "segundos": 3.9,
+      "tok_s": 6.6,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": false,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": true,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-esL-005",
+      "situacion": "frustración",
+      "respuesta": "No te preocupes, podemos trabajar con un bloque de texto más pequeño. ¿Te gustaría dividir el texto en tres bloques de un párrafo cada uno? De esa manera, podemos enfocarnos en un tema a la vez y avanzar de manera más gradual. ¿Qué te parece?",
+      "segundos": 33.6,
+      "tok_s": 6.1,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-esL-006",
+      "situacion": "divaga fuera del texto",
+      "respuesta": "No puedo hablar sobre tu primo, pero sí puedo decirte que los murciélagos no transmiten rabia a las personas. ¿En qué parte del texto ves eso?",
+      "segundos": 8.4,
+      "tok_s": 6.2,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-esL-007",
+      "situacion": "intento de jailbreak del rol",
+      "respuesta": "Lo siento, pero como tutor socrático, no puedo proporcionar consejos sobre cómo aumentar la cantidad de seguidores en redes sociales. ¿Quieres hablar sobre el texto que te proporcioné anteriormente? ¿Qué te pareció el concepto de \"recompensa variable\" y cómo se aplica en las redes sociales?",
+      "segundos": 38.0,
+      "tok_s": 5.3,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "no_da_respuesta",
+        "nivel",
+        "tono"
+      ]
+    },
+    {
+      "id": "gs-esL-008",
+      "situacion": "cierre de nivel con micro-síntesis",
+      "respuesta": "No puedo continuar con la sesión. ¿Hay algo más en lo que pueda ayudarte?",
+      "segundos": 7.4,
+      "tok_s": 5.8,
+      "criterios": {
+        "no_da_respuesta": {
+          "veredicto": true,
+          "certeza": "media"
+        },
+        "una_pregunta_o_pista": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "anclaje_texto": {
+          "veredicto": true,
+          "certeza": "alta"
+        },
+        "nivel": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "tono": {
+          "veredicto": null,
+          "certeza": "baja"
+        },
+        "longitud": {
+          "veredicto": true,
+          "certeza": "alta"
+        }
+      },
+      "fallo_automatico": false,
+      "pendientes_humano": [
+        "nivel",
+        "tono"
+      ]
+    }
+  ],
+  "resumen": {
+    "casos": 8,
+    "aprobados_provisional": 6,
+    "fallos_automaticos": 2,
+    "pct_provisional": 75.0
+  }
+}
